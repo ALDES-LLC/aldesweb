@@ -1,0 +1,40 @@
+.header-nav-link {
+	color: rgba(0, 169, 143, 1) !important;
+}
+
+.header-nav-link:hover {
+	color: rgba(0, 169, 143, 0.5);
+}
+
+.header-nav-link:focus {
+	box-shadow: none;
+}
+
+.header-nav-link:focus::after {
+	width: 100%;
+}
+
+space.mini {
+    height: 0.1 rem;
+}
+
+@media screen and (max-width: 768px) {
+	/* mobile only */
+	.cover-pic {
+		height: 15rem;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 876px) {		/*1023*/
+	/* tablets only */
+	.cover-pic {
+		height: 18rem;
+	}
+}
+
+@media screen and (min-width: 877px) { 		/*1024*/
+	/* Desktops only */
+	.cover-pic {
+		height: 15rem;
+	}
+}

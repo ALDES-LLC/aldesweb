@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALDES Homepage</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.0.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.0.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.0.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.0.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.0.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- Cirrus.css setup stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <link href="/css/cirrus.css" type="text/css" rel="stylesheet" />
+    <link href="/css/app.css" type="text/css" rel="stylesheet" />
+    <link href="/css/custom.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="header" class="header header-top header-fixed unselectable header-animated header-clear-mod header-clear">
+
+      <div class="header-brand">
+        <div class="nav-item no-hover">
+          <a>
+            <img src="/images/aldesLogoAbbv.png" href="/index.html" style="height: 2.5rem;">
+          </a>
+        </div>
+        <div class="nav-item nav-btn" id="header-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="header-nav" id="header-menu">
+
+        <div class="nav-center">
+          <div class="nav-item">
+            <a href="#" class="u u-C header-nav-link"><b>Home</b></a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="u u-C header-nav-link"><b>About</b></a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="u u-C header-nav-link"><b>Tutorials</b></a>
+          </div>
+          <div class="nav-item">
+            <a href="#" class="u u-C header-nav-link"><b>Contact</b></a>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <div class="nav-item has-sub toggle-hover" id="dropdown">
+            <figure class="avatar img-small" data-text="JD"></figure>
+            <a class="nav-dropdown-link">John Doe</a>
+            <ul class="dropdown-menu dropdown-animated" role="menu">
+              <li role="menu-item">
+                <a href="#">Profile</a>
+              </li>
+              <li role="menu-item">
+                <a href="#">Settings</a>
+              </li>
+              <li class="dropdown-menu-divider"></li>
+              <li role="menu-item">
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <section id="splash">
+      <div id="splash-img" class="hero fullscreen hero-img parallax-img">
+        <div id="hero-body" class="hero-body">
+          <div class="content u-text-center">
+            <h1 class="headline-3 text-primary title u-hide-mobile">Austin Learning Disabilities Education Services LLC</h1>
+            <h1 class="headline-1 text-primary title u-hide-tablet">ALDES LLC</h1>
+            <h5 class="uppercase text-primary sub-title">Affordable, effective, evidence-based private tutoring for students with learning disabilities</h5>
+            <a href="#" class="u-inline-block">
+              <button class="btn-primary outline">
+                Get Started
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="faded"></div>
+      </div>
+    </section>
+
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis mauris eu ligula dapibus iaculis. Quisque gravida lectus a lacus ullamcorper fringilla. Nunc placerat tincidunt fermentum. Nam sagittis nunc id sodales vestibulum. Ut ultrices, purus a convallis gravida, elit ante hendrerit est, molestie euismod mi odio at sapien. Nunc aliquet, erat et hendrerit egestas, mi purus tincidunt diam, a posuere nibh quam eget odio. Pellentesque eget viverra lectus. Morbi egestas nunc eu diam euismod, sit amet vestibulum turpis tincidunt. Mauris bibendum pellentesque tincidunt. Nam sed posuere elit. Nunc semper lobortis libero a cursus. Vestibulum id sapien eu sapien ultrices cursus ac a enim.
+
+Cras in consectetur quam. Nam mollis magna non varius egestas. Pellentesque sagittis, erat quis varius hendrerit, sem nunc suscipit diam, vitae volutpat quam libero molestie felis. Phasellus vel bibendum lectus. Etiam at egestas sem, nec faucibus tortor. Nunc sed dictum lorem. Pellentesque consequat velit vitae risus fringilla, non porttitor nibh hendrerit.
+
+Fusce sed ex tincidunt, tempus dolor eget, sollicitudin nunc. Praesent ornare malesuada metus non varius. Donec nec dapibus tortor. Fusce dictum sodales odio quis venenatis. Nam viverra lacinia lacus, vel aliquam turpis euismod pretium. Aliquam suscipit tortor non feugiat hendrerit. Sed pharetra pretium quam. Maecenas vitae risus tincidunt, ultricies nunc vitae, cursus velit. Morbi auctor eros ac arcu venenatis vehicula. Vestibulum laoreet porttitor ligula, nec tempus diam imperdiet ac. Donec mi massa, aliquam ac ante accumsan, facilisis iaculis enim.
+
+Aenean varius sit amet urna ac elementum. Proin et neque et mauris viverra scelerisque. Praesent scelerisque feugiat lorem, quis faucibus est rutrum ac. Fusce venenatis, urna sed dignissim consequat, purus urna efficitur mauris, quis aliquam felis diam eu ante. Donec magna felis, sagittis eget rutrum nec, ultricies et dui. Phasellus gravida cursus ipsum, vitae aliquam diam posuere tincidunt. In aliquet est in magna molestie efficitur. Etiam tincidunt purus nulla, sed tempus purus vehicula at. Nunc fringilla purus vel nulla mollis, id aliquet enim pellentesque. Quisque vitae posuere velit. Proin tincidunt auctor lacus non scelerisque. Donec volutpat tellus justo, nec luctus erat auctor et.
+
+Nam accumsan porttitor justo. Nam vehicula dictum rhoncus. Sed vitae dui mollis, luctus enim at, pellentesque tellus. Ut quis fringilla sapien, vitae placerat magna. Nullam eget enim sit amet erat congue consectetur non sed nulla. Aenean dignissim massa ex, id ornare metus sollicitudin sed. Duis nec ex et lacus sagittis fringilla quis sed nibh. Cras sagittis maximus erat nec interdum. Integer iaculis erat non fringilla pellentesque. Praesent viverra turpis non nunc consectetur pellentesque.
+
+Quisque in erat sem. Maecenas ornare, lorem non placerat imperdiet, turpis elit blandit lacus, hendrerit vulputate enim nisl non nisl. Pellentesque consectetur, tortor vitae congue aliquet, dolor nisi aliquet risus, et vehicula massa orci vel risus. Pellentesque consequat eros nibh, quis venenatis diam venenatis ut. Phasellus vitae neque et orci lobortis semper. Cras non risus ut lacus elementum tincidunt sit amet non nibh. Praesent vel vestibulum velit, ut sagittis tellus. Praesent viverra feugiat rhoncus. Ut non ante placerat libero vulputate egestas eu quis nisl.
+
+Sed bibendum a lacus sit amet luctus. Phasellus rhoncus massa id consequat consectetur. Nunc dui arcu, dapibus convallis velit vitae, mollis rutrum lacus. Nullam et lobortis neque. Suspendisse lobortis, lacus at scelerisque fermentum, neque purus scelerisque nisi, et auctor enim tellus a neque. Duis accumsan vestibulum iaculis. Quisque sodales est et iaculis scelerisque. Nulla facilisi. Maecenas ut tellus a dolor volutpat consectetur faucibus quis metus. Duis vulputate scelerisque accumsan. Curabitur diam quam, malesuada vel placerat eu, ullamcorper eget arcu. Aenean sollicitudin nisi sed arcu imperdiet, nec consectetur mauris molestie. Cras in leo a risus commodo egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet auctor sapien nec gravida.
+
+Sed sit amet suscipit ante. Integer sollicitudin tellus at ante euismod tincidunt. Integer interdum mattis elit, eget ultricies purus egestas a. Vivamus aliquet nibh quis aliquam pulvinar. Praesent dignissim neque sed nunc pellentesque tempor. Quisque orci metus, rutrum in lacus vel, fermentum commodo mi. Vestibulum dapibus nisl finibus malesuada pretium. Duis venenatis tellus quam, sed tristique lectus sagittis ut.
+
+Pellentesque semper ultrices quam, ac aliquet libero. Aenean vel nunc convallis arcu condimentum commodo. Curabitur gravida hendrerit urna sed dapibus. Suspendisse porttitor molestie nulla, nec pellentesque neque gravida quis. Suspendisse hendrerit dolor at risus facilisis, eu consequat dolor blandit. Donec elementum orci vel enim consequat tempus. Ut sollicitudin, nisl ut fermentum luctus, orci leo venenatis arcu, sit amet dignissim ipsum purus eget lectus. Nulla scelerisque sed neque quis luctus. Donec ut maximus ligula.
+
+In non ex faucibus ligula tristique interdum ac ac dolor. Donec vel sollicitudin mauris. Maecenas non lorem in dolor interdum semper vitae vel arcu. Quisque non elit velit. Aliquam malesuada volutpat tincidunt. Sed pellentesque tempor egestas. Nam suscipit dolor ipsum, vitae accumsan diam egestas id. Duis eu eleifend erat, quis aliquet nibh. Maecenas a ligula vel odio porttitor sollicitudin et porta lectus. Fusce hendrerit pellentesque suscipit. Nam lobortis cursus ante ac rutrum. Donec et est et elit porta mattis. Curabitur aliquam ante a nisi tempor vestibulum. Aliquam elementum elementum metus, sit amet dapibus libero euismod nec.</p>
+    </div>
+
+    <footer style="padding: 2rem 0; background-color: var(--cirrus-primary);">
+      <h6 class="white uppercase">ALDES LLC</h6>
+      <div class="content u-text-center">
+        <p class="no-margin white">Sign up to hear about the latest updates via email</p>
+        <div class="row level">
+          <div class="col-5">
+            <input class="input-small" type="text" placeholder="Name" />
+          </div>
+          <div class="col-5">
+            <input class="input-small" type="text" placeholder="Email" />
+          </div>
+          <div class="col-2">
+            <button class="btn btn-small" style="margin-bottom: 0;">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/home.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      });
+    </script>
+  </body>
+</html>
